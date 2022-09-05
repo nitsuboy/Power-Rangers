@@ -14,7 +14,7 @@ except:
 
 app = Flask(__name__)
 
-@app.route('/teste', methods=['POST'])
+@app.route('/dados', methods=['POST'])
 def login():
 
     data = request.get_data(as_text=True).split('&') 

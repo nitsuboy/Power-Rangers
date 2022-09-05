@@ -28,7 +28,7 @@ function power() {
     alert("Ainda não consigo saber qual power ranger você é");
     return false;
   }
-  fetch('http://localhost:5000/teste', {
+  fetch('http://localhost:5000/dados', {
     method: 'POST',
     headers:{
       'Content-Type': 'application/x-www-form-urlencoded'
