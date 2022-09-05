@@ -30,8 +30,9 @@ input[type=button]:hover {
 }
 
 .centro {
-
+  
   margin: auto;
+  margin-top: 10%;
   width: 700px;
   background-color: #f2f2f2;
   padding: 20px;

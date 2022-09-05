@@ -21,10 +21,10 @@ function App() {
 }
 
 function power() {
-  var a = document.forms["Form"]["a"].value;
-  var b = document.forms["Form"]["b"].value;
-  var c = document.forms["Form"]["c"].value;
-  if (a === "", b === "", c === "") {
+  var a = "" + document.forms["Form"]["a"].value;
+  var b = "" + document.forms["Form"]["b"].value;
+  var c = "" + document.forms["Form"]["c"].value;
+  if (a === "" || b === "" || c === "" || !(c.length === 16) || !(b.length === 3)) {
     alert("Ainda não consigo saber qual power ranger você é");
     return false;
   }
